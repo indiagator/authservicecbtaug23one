@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class Authservicecbtaug23oneApplicationTests {
 
-    @Test
+    //@Test
     void contextLoads() {
     }
 

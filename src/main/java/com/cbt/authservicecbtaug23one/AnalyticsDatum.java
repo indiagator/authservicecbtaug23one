@@ -8,8 +8,7 @@ import lombok.Setter;
 @Setter
 public class AnalyticsDatum
 {
-    String type;   // CREDENTIAL | USERDETAIL
+    String type;   // CREDENTIAL | USERDETAIL | ORDER
     String message;
     String payload; // Actual Object Stringified to Json
-
 }

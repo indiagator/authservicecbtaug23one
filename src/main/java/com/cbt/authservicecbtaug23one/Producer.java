@@ -16,7 +16,6 @@ public class Producer
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-
     public void sendMessage(String message)
     {
         logger.info(String.format("#### -> Producing message -> %s", message));
@@ -25,8 +24,8 @@ public class Producer
 
     public void sendAnalyticPayload(String type, String message, Object payload) throws JsonProcessingException
     {
-
         ObjectMapper mapper = new ObjectMapper();
+
         AnalyticsDatum datum = new AnalyticsDatum();
         datum.setType(type);
         datum.setMessage(message);

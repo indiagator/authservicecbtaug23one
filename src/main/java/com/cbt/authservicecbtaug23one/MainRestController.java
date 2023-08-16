@@ -73,10 +73,10 @@ public class MainRestController
 
     @PostMapping("signup")
     public ResponseEntity<String> signup(@RequestBody Credential credential) throws JsonProcessingException {
+
         credentialRepository.save(credential);
 
         logger.info("NEW DATUM PUBLISHED");
-
 
         AnalyticsDatum datum = new AnalyticsDatum();
         datum.setType("CREDENTIAL");
